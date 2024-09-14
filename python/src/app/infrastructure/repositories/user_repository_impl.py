@@ -1,6 +1,6 @@
 from typing import List
-from app.domain.models.user import User
-from app.domain.repositories.user_repository import UserRepository
+from src.app.domain.models.user import User
+from src.app.domain.repositories.user_repository import UserRepository
 
 class UserRepositoryImpl(UserRepository):
     def __init__(self):
