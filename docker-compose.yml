@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  python:
+    container_name: line-bot-gpt-container
+    image: "line-bot-gpt"
+    build:
+      context: .
+      dockerfile: ./container/Dockerfile
+    volumes:
+      - "./python/src:/home/app/src"
+      - "./python/requirements.txt:/home/app/requirements.txt"
+    tty: true
+    command: "bin/start.sh"
+    ports:
+      - "8000:8000"
