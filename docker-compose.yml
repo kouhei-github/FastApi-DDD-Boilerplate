@@ -2,8 +2,8 @@ version: '3.4'
 
 services:
   python:
-    container_name: line-bot-gpt-container
-    image: "line-bot-gpt"
+    container_name: python-ddd-boilerplate-container
+    image: "python-ddd-boilerplate"
     build:
       context: .
       dockerfile: ./container/Dockerfile
